@@ -26,6 +26,7 @@ public class ShoesPage extends AbstractPage
     private final By label = By.xpath("//label[@for='arrFilter_1097_3288835175']");
 
     private final By label2 =By.xpath("//label[@for='arrFilter_1097_3288835175']");
+
     private final By  button_ghost_red = By.xpath("//a[@class='button button_ghost-red filterShowButton to___process']");
 
     private final By button1 = By.xpath("//a[@class='button button_ghost-red filterShowButton to___process']");
@@ -64,6 +65,9 @@ public class ShoesPage extends AbstractPage
         new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
                 .until(ExpectedConditions.elementToBeClickable(label));
       driver.findElement(label2).click();
+
+
+
         new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
                 .until(ExpectedConditions.elementToBeClickable(button_ghost_red));
         driver.findElement(button1).click();
