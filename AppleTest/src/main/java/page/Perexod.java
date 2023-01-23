@@ -10,6 +10,7 @@ public class Perexod extends AbstractPage{
     private final String BASE_URL = "https://www.marko.by/";
     private final By ClickTo =  By.xpath("//div[@class='t']");
     private final By ClickBack = By.xpath("//a[@class='header-assets__logo-inner']");
+
     public Perexod(WebDriver driver) {
         super(driver);
         PageFactory.initElements(this.driver, this);

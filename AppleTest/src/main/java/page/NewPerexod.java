@@ -16,7 +16,7 @@ public class NewPerexod extends AbstractPage
     }
 
     @Override
-    protected AbstractPage openPage() {
+    public AbstractPage openPage() {
         driver.navigate().to(BASE_URL);
         driver.findElement(ClickTo).click();
         return null;
